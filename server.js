@@ -38,16 +38,22 @@ app.use('/baby-name-suggestor', baby_name_suggestor)
 // start server
 // app.listen(port, function() {
 //   console.log(`server live @ localhost:${port}`)
+//   console.log(`ctrl-c to stop server`)
+//   console.log(`when prompted type y <enter>`)
 // })
 
 // http start server
 // http.createServer(app)
 //   .listen(port, function () {
 //     console.log(`server live @ http://localhost:${port}`)
+//     console.log(`ctrl-c to stop server`)
+//     console.log(`when prompted type y <enter>`)
 //   })
 
 // https start server
 https.createServer(httpsOptions, app)
   .listen(port, function () {
     console.log(`server live @ https://localhost:${port}`)
+    console.log(`ctrl-c to stop server`)
+    console.log(`when prompted type y <enter>`)
   })
