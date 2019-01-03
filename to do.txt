@@ -1,0 +1,25 @@
+NOW---
+
+ssl key and cert and not identifying the website
+
+add git to the-playground folder
+ignore node_modules
+
+drop got on github, add repo to package.json
+
+add to github
+
+
+LATER---
+
+react
+  use react to create main ui, title and nav bar
+
+favicon
+  add a favicon mod to server fav icons
+
+projects
+  api projeect
+  notepad, that can download file as text and edit text (bold, underline, italic)
+  something that requires the use of classes
+  login page

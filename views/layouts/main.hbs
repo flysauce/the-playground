@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>the playground</title>
+  <link rel="stylesheet" href="/css/main.css">
+  {{#each css}}
+    <link rel="stylesheet" href="/css/{{this}}">
+  {{/each}}
+</head>
+
+<body>
+  <a id="home-button" href="/">the playground</a>
+  <br><br><br>
+  {{{body}}}
+  {{#each js}}
+    <script src="/js/{{this}}"></script>
+  {{/each}}
+</body>
+
+</html>

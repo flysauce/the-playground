@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+}
+
+#home-button {
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+}
