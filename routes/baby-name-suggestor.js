@@ -10,11 +10,6 @@ router.get('/', function (req, res) {
   res.render('baby-name-suggestor')
 })
 
-// get /baby-name-suggestor/about
-router.get('/about', function (req, res) {
-  res.render('baby-name-suggestor-about')
-})
-
 // post /baby-name-suggestor
 router.post('/', function (req, res) {
   const db = new sqlite3.Database("./data/baby-name-suggestor.db", (err) => {

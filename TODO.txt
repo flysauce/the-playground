@@ -2,13 +2,9 @@ NOW---
 
 ssl key and cert and not identifying the website
 
-add git to the-playground folder
-ignore node_modules
+added bootstrap successfully, now i must change all the styles because it fucked up everything
 
-drop got on github, add repo to package.json
-
-add to github
-
+make the-playground responsive
 
 LATER---
 
@@ -19,7 +15,7 @@ favicon
   add a favicon mod to server fav icons
 
 projects
-  api projeect
+  api project
   notepad, that can download file as text and edit text (bold, underline, italic)
   something that requires the use of classes
   login page
