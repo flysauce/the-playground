@@ -2,10 +2,11 @@ NOW---
 
 ssl key and cert and not identifying the website
 
-added bootstrap successfully
-  now i must change all the styles because it fucked up everything
+make the pages pretty with bootstrap
+  make responsive using grid
 
-make the-playground responsive
+  CENTER the playground HOME BUTTON
+
 
 LATER---
 

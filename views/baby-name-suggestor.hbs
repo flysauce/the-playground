@@ -1,47 +1,46 @@
 <link rel="stylesheet" href="/css/baby-name-suggestor.css">
-<div class="container">
-  <h1>baby name suggestor</h1>
+
+<h1>baby name suggestor</h1>
+<br>
+<h3>suggest a name for the hyphothetical child of roxana and ryan</h3>
+<!-- post new name -->
+<form id="suggest" method="post" action="/baby-name-suggestor" onsubmit="return validate_form()">
+  <tr>
+    <td>
+      <input type="text" name="first_name" placeholder="First name">
+    </td>
+    <td>
+      <input type="text" name="middle_name" placeholder="Middle name (optional)">
+    </td>
+    <td>
+      <select name="last_name">
+        <option value="Lubin">Lubin</option>
+        <option value="Manoiu">Manoiu</option>
+        <option value="Lubman">Lubman</option>
+        <option value="Lubeman">Lubeman</option>
+        <option value="Lubinston">Lubinston</option>
+        <option value="Manlub">Manlub</option>
+        <option value="Manlube">Manlube</option>
+        <option value="Manwe">Manwe</option>
+        <option value="Manston">Manston</option>
+      </select>
+    </td>
+  </tr>
   <br>
-  <h3>suggest a name for the hyphothetical child of roxana and ryan</h3>
-  <!-- post new name -->
-  <form id="suggest" method="post" action="/baby-name-suggestor" onsubmit="return validate_form()">
-    <tr>
-      <td>
-        <input type="text" name="first_name" placeholder="First name">
-      </td>
-      <td>
-        <input type="text" name="middle_name" placeholder="Middle name (optional)">
-      </td>
-      <td>
-        <select name="last_name">
-          <option value="Lubin">Lubin</option>
-          <option value="Manoiu">Manoiu</option>
-          <option value="Lubman">Lubman</option>
-          <option value="Lubeman">Lubeman</option>
-          <option value="Lubinston">Lubinston</option>
-          <option value="Manlub">Manlub</option>
-          <option value="Manlube">Manlube</option>
-          <option value="Manwe">Manwe</option>
-          <option value="Manston">Manston</option>
-        </select>
-      </td>
-    </tr>
-    <br>
-    <br>
-    <button type="submit">suggest</button>
-  </form>
   <br>
-  <h3>view already suggested names</h3>
-  <!-- get names in databse -->
-  <form method="get" action="/baby-name-suggestor/get-names">
-    <button type="submit">view</button>
-  </form>
-  <!-- when names need to be displayed -->
-  <p id="data">
-    {{#each names}}
-      {{this.first_name}} {{this.middle_name}} {{this.last_name}} <br>
-    {{/each}}
-  </p>
-</div>
-<!-- form validation script -->
+  <button type="submit">suggest</button>
+</form>
+<br>
+<h3>view already suggested names</h3>
+<!-- get names in databse -->
+<form method="get" action="/baby-name-suggestor/get-names">
+  <button type="submit">view</button>
+</form>
+<!-- when names need to be displayed -->
+<p id="data">
+  {{#each names}}
+    {{this.first_name}} {{this.middle_name}} {{this.last_name}} <br>
+  {{/each}}
+</p>
+
 <script src="/js/baby-name-suggestor.js"></script>
