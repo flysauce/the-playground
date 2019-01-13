@@ -4,20 +4,23 @@
 
 <head>
   <title>the playground</title>
-  <link href="/css/main.css" rel="stylesheet">
-  <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap-grid.min.css">
   {{#each css}}
     <link rel="stylesheet" href="/css/{{this}}">
   {{/each}}
 </head>
 
 <body>
-  <a id="home-button" href="/">the playground</a>
-  <br><br><br>
-  {{{body}}}
-  {{#each js}}
-    <script src="/js/{{this}}"></script>
-  {{/each}}
+  <div class="container">
+    <a id="home-button" href="/">the playground</a>
+    <br><br><br>
+    {{{body}}}
+    {{#each js}}
+      <script src="/js/{{this}}"></script>
+    {{/each}}
+  </div>
 </body>
 
 </html>
