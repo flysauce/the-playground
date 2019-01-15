@@ -1,11 +1,9 @@
 NOW---
 
-login page
-
 make the pages pretty with bootstrap
-  make responsive using grid
 
-ssl key and cert and not identifying the website
+ssl key and cert and not identifying the website correctly
+  getting message "connection not safe" when trying to connect to the website
 
 LATER---
 

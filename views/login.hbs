@@ -1,6 +1,16 @@
 <link rel="stylesheet" href="/css/login.css">
 
 <h1>login</h1>
-<button>login</button>
+<br>
+<form name="login" method="post" action="/login">
+  <input type="text" name="username" placeholder="username" required>
+  <br>
+  <input type="password" name="password" placeholder="password" required>
+  <br>
+  <input type="submit" value="login">
+</form>
+<br>
+<p>username: keyboard</p>
+<p>password: mouse</p>
 
-<script src="/js/login.js" ></script>
+{{{login_fail}}}
