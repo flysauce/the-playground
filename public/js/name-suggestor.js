@@ -1,4 +1,4 @@
-// form validation for baby-name-suggestor view button
+// form validation for name-suggestor view button
 function validate_form() {
   let first = document.forms["suggest"]["first_name"].value
   let middle = document.forms["suggest"]["middle_name"].value

@@ -9,8 +9,9 @@ const path = require('path')
 
 // routes
 const index = require('./routes/index.js')
-const baby_name_suggestor = require('./routes/baby-name-suggestor.js')
+const name_suggestor = require('./routes/name-suggestor.js')
 const number_grid_scrambler = require('./routes/number-grid-scrambler.js')
+const login = require('./routes/login.js')
 
 // express setup
 const app = express()
@@ -37,8 +38,9 @@ app.use(express.static(path.join(__dirname, 'node_modules')))
 
 // mounting routes
 app.use('/', index)
-app.use('/baby-name-suggestor', baby_name_suggestor)
+app.use('/name-suggestor', name_suggestor)
 app.use('/number-grid-scrambler', number_grid_scrambler)
+app.use('/login', login)
 
 // start server
 // app.listen(port, function() {

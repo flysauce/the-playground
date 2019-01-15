@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS baby_names(
+CREATE TABLE IF NOT EXISTS names(
   first_name TEXT,
   middle_name TEXT,
   last_name TEXT,

@@ -1,12 +1,11 @@
 NOW---
 
-ssl key and cert and not identifying the website
+login page
 
 make the pages pretty with bootstrap
   make responsive using grid
 
-  CENTER the playground HOME BUTTON
-
+ssl key and cert and not identifying the website
 
 LATER---
 
@@ -20,4 +19,3 @@ projects
   api project
   notepad, that can download file as text and edit text (bold, underline, italic)
   something that requires the use of classes
-  login page
