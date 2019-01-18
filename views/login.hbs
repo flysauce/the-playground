@@ -2,15 +2,15 @@
 
 <h1>login</h1>
 <br>
-<form name="login" method="post" action="/login">
-  <input type="text" name="username" placeholder="username" required>
+<div>
+  <input type="text" id="username" placeholder="username">
   <br>
-  <input type="password" name="password" placeholder="password" required>
+  <input type="password" id="password" placeholder="password">
   <br>
-  <input type="submit" value="login">
-</form>
+  <button onclick="send_login_information()">login</button>
+</div>
 <br>
 <p>username: keyboard</p>
 <p>password: mouse</p>
 
-{{{login_fail}}}
+<script src="/js/login.js"></script>

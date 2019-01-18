@@ -17,7 +17,8 @@ router.get('/', function (req, res) {
  * else return false
  */
 router.post('/', function (req, res) {
-  //console.log("req:" + JSON.stringify(req.body))
+  // console.log("req: ")
+  // console.log(req.body)
   let username = req.body.username
   let password = req.body.password
   // console.log("username: " + username + " password: " + password)
@@ -44,14 +45,12 @@ router.post('/', function (req, res) {
       }
     }
     // console.log(result)
-    if (result === true) {
-      res.render('login-success')
-    }
-    else {
-      res.render('login', { login_fail: "<script> alert('login failed') </script>" })
-    }
+    // send back whether of not result is true or false
+    // send back response object with result: true or false
+    res.send(result)
   })
   db.close()
+  // send result as response
 })
 
 module.exports = router

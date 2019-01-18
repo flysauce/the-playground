@@ -12,6 +12,7 @@ const index = require('./routes/index.js')
 const name_suggestor = require('./routes/name-suggestor.js')
 const number_grid_scrambler = require('./routes/number-grid-scrambler.js')
 const login = require('./routes/login.js')
+const login_success = require('./routes/login-success.js')
 
 // express setup
 const app = express()
@@ -41,6 +42,7 @@ app.use('/', index)
 app.use('/name-suggestor', name_suggestor)
 app.use('/number-grid-scrambler', number_grid_scrambler)
 app.use('/login', login)
+app.use('/login-success', login_success)
 
 // start server
 // app.listen(port, function() {
